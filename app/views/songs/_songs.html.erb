@@ -1,7 +1,11 @@
 <% songs.each do |song| %> 
     <div class = "song-card">
-    <p> <%= song.title %> </p>
-    <p> <%= song.artist.name %> </p>
-    <date> <%= song.created_at.to_s(:short) %> </date>
+    <p> 
+    <%= song.title %>
+    -
+    <%= song.artist.name %>
+    -
+    <%= song.released_on%>
+    </p>
     </div>
 <% end %>
