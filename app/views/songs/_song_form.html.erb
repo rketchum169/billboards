@@ -1,0 +1,17 @@
+
+<p>
+<%= song.label "Title" %>
+<%= song.text_area(:title) %>
+<br>
+<%= song.label "Artist" %>
+<%= song.collection_select(:artist_id, Artist.all ,:name, :name) %>
+<br>
+<%= song.label "Rating" %>
+<%= song.number_field(:rating, in: 0.0..10.0, step: 0.1) %>
+<br>
+<%= song.label "Released On" %>
+<%= song.date_field(:released_on) %>
+<br>
+<%= song.label "Genre" %>
+<%= song.text_area(:genre) %>
+</p>

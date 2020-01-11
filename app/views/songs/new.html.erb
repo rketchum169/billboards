@@ -1,5 +1,8 @@
 <h1>New Song</h1>
 
-<%= render 'form', song: @song %>
+<%= form_for(@song) do |f| %>
+    <%= render("song_form", song: f) %>
+    <%= f.submit("Save") %>
+<% end %>
 
 <%= link_to 'Back', songs_path %>

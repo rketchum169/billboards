@@ -1,6 +1,8 @@
 <h1>Editing Song</h1>
-
-<%= render 'form', song: @song %>
+<%= form_for(@song) do |f| %>
+    <%= render("song_form", song: f) %>
+    <%= f.submit("Update") %>
+<% end %>
 
 <%= link_to 'Show', @song %> |
-<%= link_to 'Back', songs_path %>
+<%= link_to 'Back', :back %>

@@ -16,8 +16,6 @@
       -
       <%= song.artist.name %>
       -
-      <%= song.released_on%>
-      -
       <%= link_to 'Show', song %>
       <%= link_to 'Edit', edit_song_path(song) %>
       <%= link_to 'Delete', song, method: :delete, data: { confirm: 'Are you sure?' } %>

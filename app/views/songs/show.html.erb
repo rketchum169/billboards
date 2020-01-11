@@ -1,4 +1,16 @@
 <p id="notice"><%= notice %></p>
+    <% song = @song %>
+    <p> 
+      <p>Title: <%= song.title %><p>
+      <p>Artist: <%= song.artist.name %><p>
+      <p>Rating: <%= song.rating %><p>
+      <p>Released On: <%= song.released_on %>
+      <p>Genre: <%= song.genre %>
+      <br>
+      <br>
+      <%= link_to 'Edit', edit_song_path(@song) %> |
+      <%= link_to 'Delete', song, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </p>
 
-<%= link_to 'Edit', edit_song_path(@song) %> |
+
 <%= link_to 'Back', songs_path %>
