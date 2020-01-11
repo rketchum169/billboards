@@ -1,4 +1,4 @@
-class Billboards < ActiveRecord::Migration[6.0]
+class CreateBillboardSongs < ActiveRecord::Migration[6.0]
   def change
     create_table :billboards_songs, id: false do |t|
       t.belongs_to :billboard, index: true
@@ -6,3 +6,4 @@ class Billboards < ActiveRecord::Migration[6.0]
     end
   end
 end
+ 

@@ -1,5 +1,5 @@
 class AddCountryToBillboard < ActiveRecord::Migration[6.0]
   def change
-    add_column :billboards, :country, :string
+    add_column :billboard, :country, :string
   end
 end
