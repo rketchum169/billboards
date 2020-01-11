@@ -12,6 +12,8 @@
   <tbody>
     <% @billboards.each do |billboard| %>
       <tr>
+        <%= billboard.title %>
+        <%= billboard.country %>
         <td><%= link_to 'Show', billboard %></td>
       </tr>
     <% end %>
