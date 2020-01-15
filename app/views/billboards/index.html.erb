@@ -10,16 +10,17 @@
   </thead>
 
   <tbody>
+
     <% @billboards.each do |billboard| %>
-      <tr>
+    
+    <P>
         <%= billboard.title %>
         <%= billboard.country %>
-        <td><%= link_to 'Show', billboard %></td>
-      </tr>
+        <%= link_to 'Show', billboard %>
     <% end %>
+    </P>
   </tbody>
 </table>
 
 <br>
-
 <%= link_to 'New Billboard', new_billboard_path %>
