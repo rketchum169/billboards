@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  
     before_action :set_view_count_cookie
   private
   def set_view_count_cookie
